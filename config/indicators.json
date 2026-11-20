@@ -1,0 +1,23 @@
+
+[
+  {"code": "NY.GDP.MKTP.CD", "name": "GDP", "category": "economy", "unit": "USD"},
+  {"code": "NY.GDP.MKTP.KD.ZG", "name": "GDP growth", "category": "economy", "unit": "%"},
+  {"code": "NY.GDP.PCAP.CD", "name": "GDP per capita", "category": "economy", "unit": "USD/person"},
+  {"code": "NY.GDP.PCAP.PP.KD", "name": "GDP per capita PPP", "category": "economy", "unit": "constant international dollars/person"},
+  {"code": "FP.CPI.TOTL.ZG", "name": "Inflation", "category": "economy", "unit": "%"},
+  {"code": "NE.EXP.GNFS.ZS", "name": "Exports", "category": "economy", "unit": "% GDP"},
+  {"code": "NE.IMP.GNFS.ZS", "name": "Imports", "category": "economy", "unit": "% GDP"},
+  {"code": "SL.UEM.TOTL.ZS", "name": "Unemployment", "category": "labor", "unit": "%"},
+  {"code": "SL.UEM.1524.ZS", "name": "Youth unemployment", "category": "labor", "unit": "%"},
+  {"code": "SL.TLF.CACT.ZS", "name": "Labor force participation", "category": "labor", "unit": "%"},
+  {"code": "SP.POP.TOTL", "name": "Population", "category": "demography", "unit": "people"},
+  {"code": "SP.POP.GROW", "name": "Population growth", "category": "demography", "unit": "%"},
+  {"code": "SP.URB.TOTL.IN.ZS", "name": "Urban population", "category": "demography", "unit": "%"},
+  {"code": "SP.DYN.CBRT.IN", "name": "Birth rate", "category": "demography", "unit": "per 1000 people"},
+  {"code": "SP.DYN.LE00.IN", "name": "Life expectancy", "category": "social", "unit": "years"},
+  {"code": "SP.DYN.IMRT.IN", "name": "Infant mortality", "category": "social", "unit": "per 1000 live births"},
+  {"code": "SH.XPD.CHEX.GD.ZS", "name": "Health expenditure", "category": "social", "unit": "% GDP"},
+  {"code": "SE.XPD.TOTL.GD.ZS", "name": "Education expenditure", "category": "social", "unit": "% GDP"},
+  {"code": "IT.NET.USER.ZS", "name": "Internet users", "category": "infrastructure", "unit": "%"},
+  {"code": "EG.ELC.ACCS.ZS", "name": "Electricity access", "category": "infrastructure", "unit": "%"}
+]

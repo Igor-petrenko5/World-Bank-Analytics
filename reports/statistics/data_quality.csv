@@ -1,0 +1,7 @@
+indicator,total_rows,valid_rows,missing_rows,completeness_pct,outliers_iqr
+gdp_growth_pct,5642,5354,288,94.9,372
+inflation_pct,5642,4697,945,83.25,332
+unemployment_pct,5642,4848,794,85.93,180
+gdp_per_capita_usd,5642,5428,214,96.21,441
+life_expectancy,5642,5425,217,96.15,56
+health_expenditure_pct_gdp,5642,4562,1080,80.86,69

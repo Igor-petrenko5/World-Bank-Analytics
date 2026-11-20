@@ -1,0 +1,5 @@
+x,y,n,pearson_r,pearson_p,pearson_ci_lower,pearson_ci_upper,spearman_r,spearman_p,hypothesis
+gdp_growth_pct,unemployment_pct,4532,-0.15482898940877948,,,,-0.16273457901048277,,H1_gdp_growth_unemployment
+inflation_pct,gdp_growth_pct,4460,-0.06370974708780014,,,,-0.012370944410796336,,H2_inflation_gdp_growth
+gdp_per_capita_usd,life_expectancy,5024,0.014824752650049707,,,,-0.02693302341949776,,H3_gdp_per_capita_life
+health_expenditure_pct_gdp,life_expectancy,4369,-0.07592940180063307,,,,-0.12167185464607637,,H4_health_life
