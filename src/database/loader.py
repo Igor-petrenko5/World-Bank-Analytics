@@ -1,7 +1,8 @@
 
 import logging
 import uuid
-
+import os
+from pathlib import Path
 import pandas as pd
 
 from sqlalchemy import text
@@ -11,7 +12,7 @@ from src.database.connection import get_engine
 
 logger = logging.getLogger(__name__)
 
-DATA_DIR = "data/processed/20261120_124250_149508"
+ROOT = Path(__file__).resolve().parents[2]
 
 BATCH_SIZE = 5000
 
@@ -32,6 +33,47 @@ def execute_batches(conn, query, records):
         batch = records[start:start + BATCH_SIZE]
         conn.execute(text(query), batch)
 
+def resolve_data_dir():
+
+    configured = os.getenv("WB_DATA_DIR")
+
+    if configured:
+        folder = Path(configured)
+
+        if not folder.is_absolute():
+            folder = ROOT / folder
+
+    else:
+        processed = ROOT / "data" / "processed"
+
+        candidates = sorted(
+            [
+                path for path in processed.iterdir()
+                if path.is_dir()
+                and (path / "quality_summary.json").is_file()
+            ],
+            reverse=True,
+        )
+
+        if not candidates:
+            raise FileNotFoundError(
+                "No processed datasets found"
+            )
+
+        folder = candidates[0]
+
+    required = [
+        "countries.csv",
+        "indicators.csv",
+        "quality_report.csv",
+        "quality_summary.json",
+    ]
+
+    for filename in required:
+        if not (folder / filename).is_file():
+            raise FileNotFoundError(folder / filename)
+
+    return folder
 
 def load_database():
 
@@ -39,7 +81,8 @@ def load_database():
     run_id = str(uuid.uuid4())
 
     try:
-
+        DATA_DIR = resolve_data_dir()
+        logger.info("Loading dataset: %s", DATA_DIR)
         logger.info("Starting database loading: %s", run_id)
 
         countries = pd.read_csv(

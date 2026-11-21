@@ -1,0 +1,10 @@
+.venv
+.git
+.env
+.env.*
+data
+logs
+reports
+airflow
+**/__pycache__
+.pytest_cache

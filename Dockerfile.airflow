@@ -1,0 +1,17 @@
+FROM apache/airflow:3.4.0-python3.12
+
+USER root
+
+RUN mkdir -p /opt/wb-venv \
+    && chown airflow:root /opt/wb-venv
+
+USER airflow
+
+COPY --chown=airflow:root requirements.txt /tmp/wb-requirements.txt
+
+RUN python -m venv /opt/wb-venv \
+    && /opt/wb-venv/bin/pip install --upgrade pip \
+    && /opt/wb-venv/bin/pip install --no-cache-dir \
+       -r /tmp/wb-requirements.txt
+
+WORKDIR /opt/airflow
