@@ -1,21 +1,21 @@
 ﻿income_level,indicator_x,indicator_y,pearson,spearman,observations
-High income,gdp_growth_pct,unemployment_pct,-0.12446674158252101,-0.15743668507587913,1477
-High income,inflation_pct,gdp_growth_pct,0.08903887194346106,0.17643149687677112,1526
+High income,gdp_growth_pct,unemployment_pct,-0.12446674158252104,-0.15743668507587913,1477
+High income,inflation_pct,gdp_growth_pct,0.08903887194346108,0.17643149687677112,1526
 High income,gdp_per_capita_usd,life_expectancy,0.5407314695993568,0.7069201684473366,1967
 High income,health_expenditure_pct_gdp,life_expectancy,0.1622374699964422,0.3509936059413249,1523
 High income,internet_users_pct,gdp_per_capita_usd,0.4797747765334416,0.6027395047105936,1710
 Low income,gdp_growth_pct,unemployment_pct,-0.1574666114647697,-0.09594396308934941,539
 Low income,inflation_pct,gdp_growth_pct,-0.19467392506298592,-0.11693169576512367,471
 Low income,gdp_per_capita_usd,life_expectancy,0.4670646171840287,0.5188589904410323,542
-Low income,health_expenditure_pct_gdp,life_expectancy,0.05694978109095308,0.12408962896936315,544
+Low income,health_expenditure_pct_gdp,life_expectancy,0.056949781090953076,0.12408962896936315,544
 Low income,internet_users_pct,gdp_per_capita_usd,0.47121189971182986,0.6926020769189737,505
 Lower middle income,gdp_growth_pct,unemployment_pct,-0.1354683686146221,-0.22408087954064881,1089
 Lower middle income,inflation_pct,gdp_growth_pct,-0.16277660476917227,0.05320410825301031,1039
-Lower middle income,gdp_per_capita_usd,life_expectancy,0.3906341395935008,0.4545258610986302,1128
+Lower middle income,gdp_per_capita_usd,life_expectancy,0.39063413959350074,0.4545258610986302,1128
 Lower middle income,health_expenditure_pct_gdp,life_expectancy,0.11922427058740741,0.21998029838555308,1097
-Lower middle income,internet_users_pct,gdp_per_capita_usd,0.5271530494744473,0.7024174503282237,1100
+Lower middle income,internet_users_pct,gdp_per_capita_usd,0.5271530494744471,0.7024174503282237,1100
 Upper middle income,gdp_growth_pct,unemployment_pct,-0.07798267459259585,-0.0918825978829166,1270
 Upper middle income,inflation_pct,gdp_growth_pct,-0.0020863554510462726,0.12417612103425872,1279
 Upper middle income,gdp_per_capita_usd,life_expectancy,0.2394440404224292,0.3529901771396553,1405
-Upper middle income,health_expenditure_pct_gdp,life_expectancy,0.028591819710896374,0.20487514113231947,1376
+Upper middle income,health_expenditure_pct_gdp,life_expectancy,0.028591819710896367,0.20487514113231947,1376
 Upper middle income,internet_users_pct,gdp_per_capita_usd,0.5691803782704965,0.6481125689014763,1345
