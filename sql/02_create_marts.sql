@@ -22,7 +22,7 @@ SET row_security = off;
 -- Name: marts; Type: SCHEMA; Schema: -; Owner: -
 --
 
-CREATE SCHEMA marts;
+CREATE SCHEMA IF NOT EXISTS marts;
 
 
 --
