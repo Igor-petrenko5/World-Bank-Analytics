@@ -228,11 +228,6 @@ DataLens установлен **в отдельной папке/отдельн�
 - [Apache Airflow](https://airflow.apache.org/)
 - [Yandex DataLens Open Source](https://github.com/datalens-tech/datalens)
 
-# Скриншоты проекта
-
-В данной папке представлены результаты работы
-автоматизированной аналитической системы
-World Bank Analytics.
 
 - airflow_pipeline.png — успешное выполнение DAG.
 - datalens_dashboard.png — итоговый аналитический дашборд.
